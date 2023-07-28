@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
     <title>William Harris Portfolio</title>
 </head>
-<body>
+<body onload="loadDarkMode()">
     <header id="header" class="head">
         <div id="headerInner>
             <div>
@@ -22,7 +22,7 @@
             <div>
                 <nav id="rightNav" class="navigation">
                     <a class="navigationItem" href="./contact.html">CONTACT</a>
-                    <button onclick="darkMode()" type="button" id="darkModeBtn">
+                    <button onclick="toggleDarkMode()" type="button" id="darkModeBtn">
                         <img src="images/moon.svg" id="darkModeImg" alt="darkMode" />
                     </button>
                 </nav>

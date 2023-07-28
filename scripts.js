@@ -11,16 +11,32 @@
     }
 }
 
-
-function darkMode() {
+function toggleDarkMode() {
     var darkModeImg = document.getElementById("darkModeImg");
     var element = document.body;
-    element.classList.toggle("darkModeBody");
 
-    if (darkModeImg.getAttribute("src") == "images/moon.svg") {
+    if (localStorage.getItem("darkMode") == "true") {
+        element.classList.remove("darkModeBody");
+        darkModeImg.src = "images/moon.svg";
+        localStorage.setItem("darkMode", "false");
+    }
+    else {
+        element.classList.add("darkModeBody");
+        darkModeImg.src = "images/sun.svg";
+        localStorage.setItem("darkMode", "true");
+    }
+}
+
+function loadDarkMode() {
+    var darkModeImg = document.getElementById("darkModeImg");
+    var element = document.body;
+
+    if (localStorage.getItem("darkMode") == "true") {
+        element.classList.add("darkModeBody");
         darkModeImg.src = "images/sun.svg";
     }
     else {
+        element.classList.remove("darkModeBody");
         darkModeImg.src = "images/moon.svg";
     }
 }
