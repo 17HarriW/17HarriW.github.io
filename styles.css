@@ -1,0 +1,78 @@
+﻿:root {
+    --main-bg-color: #030301;
+    --alt-bg-color: #090b0c;
+    --light-bg-color: #C3DFE0;
+    --main-text-color: #F6F8F8;
+    --accent-1-color: #FB3640;
+    --accent-2-color: #FFC15E;
+    --accent-3-color: #5FAD56;
+    --accent-4-color: #2CA58D;
+    --accent-5-color: #3A506B;
+    --accent-6-color: #331832;
+    --main-font-family: "Tw Cen MT";
+}
+
+body {
+    background-color: var(--main-text-color);
+    color: var(--main-bg-color);
+    font-family: var(--main-font-family);
+}
+
+.darkModeBody {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+}
+
+#header {
+    display: flex;
+}
+
+.navigation {
+    padding: 1em;
+}
+
+.center {
+    margin: auto;
+}
+
+.navigationItem {
+    border-style: none;
+    font-size: large;
+    margin: 0.2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 0.1em;
+    text-decoration: none;
+    line-height: 3em;
+    color: var(--accent-4-color);
+}
+
+.navigationItem:hover {
+    color: var(--accent-5-color);
+}
+
+#nameTitle {
+    color: var(--accent-1-color);
+    font-family: Consolas;
+}
+
+#darkModeBtn {
+    height: 3em;
+    width: 3em;
+    background-color: transparent;
+    border: none;
+    margin: 0.2em;
+    padding: 0.1em;
+}
+
+#darkModeImg {
+    height: 2em;
+    cursor: pointer;
+    width: 2em;
+    filter: invert(57%) sepia(50%) saturate(525%) hue-rotate(118deg) brightness(86%) contrast(93%);
+}
+
+#darkModeImg:hover {
+    filter: invert(27%) sepia(25%) saturate(823%) hue-rotate(173deg) brightness(43%) contrast(86%);
+}
+
