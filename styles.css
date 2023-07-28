@@ -9,7 +9,7 @@
     --accent-4-color: #2CA58D;
     --accent-5-color: #3A506B;
     --accent-6-color: #331832;
-    --main-font-family: "Tw Cen MT";
+    --main-font-family: "Tw Cen MT", "Trebuchet MS", Helvetica, sans-serif;
 }
 
 body {
@@ -53,7 +53,7 @@ body {
 
 #nameTitle {
     color: var(--accent-1-color);
-    font-family: 'Cascadia Code';
+    font-family: "Cascadia Code", Courier New, Courier, monospace;
 }
 
 #darkModeBtn {
