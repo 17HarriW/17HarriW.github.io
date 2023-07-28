@@ -17,31 +17,38 @@
                 </nav>
             </div>
             <div class="center">
-                <h1 id="nameTitle" class="title">William Harris</h1>
+                <h1 id="nameTitle" class="title"><u>William Harris</u></h1>
             </div>
             <div>
                 <nav id="rightNav" class="navigation">
                     <a class="navigationItem" href="./contact.html">CONTACT</a>
                     <button onclick="darkMode()" type="button" id="darkModeBtn">
-                        <img src="images/moon.svg" id="darkModeImg" alt="darkMode"/>
+                        <img src="images/moon.svg" id="darkModeImg" alt="darkMode" />
                     </button>
                 </nav>
             </div>
         </div>
     </header>
 
-    
+    <div class="collapsibleContainer">
+        <button onclick="ALevelsCollapse()" type="button" class="collapsible">
+            <img src="images/expand.svg" class="collapsibleImg" id="ALevelCollapsibleImg" alt="collapsible" />
+        </button>
+        <h2 id="ALevelsTitle" class="collapsibleTitle">Studies</h2>
+    </div>
+    <div class="content" id="ALevelContent">
+        <p>I am currently studying 4 A-Levels at Fulford School, York</p>
+        <ul id="subjectList" class="list">
+            <li>Computer Science</li>
+            <li>Mathematics</li>
+            <li>Further Mathematics</li>
+            <li>Physics</li>
+        </ul>
+    </div>
+
 
     <h2 id="portfolioTitle" class="title">Portfolio</h2>
 
-    <p id="personalIntroduction">Hi, I'm William Harris<br />I am currently studying my A levels at Fulford School</p>
-    <h4 id="subjectListTitle" class="title">My subjects are:</h4>
-    <ul id="subjectList" class="list">
-        <li>Computer Science</li>
-        <li>Mathematics</li>
-        <li>Further Mathematics</li>
-        <li>Physics</li>
-    </ul>
 
     <h3 id="projectsTitle" class="title">Projects</h3>
 
