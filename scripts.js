@@ -16,7 +16,7 @@ function toggleDarkMode() {
     var bodyElement = document.body;
     var formControlElements = document.getElementsByClassName("formControl");
     var formBodyElements = document.getElementsByClassName("formBody");
-    var welcomeTitleElement = document.getElementById("welcomeTitle");
+    var bgTitleElements = document.getElementsByClassName("bgTitle");
 
     
 
@@ -30,8 +30,10 @@ function toggleDarkMode() {
             }
         }
 
-        if (welcomeTitleElement != null) {
-            welcomeTitleElement.classList.remove("bgTitleDark");
+        if (bgTitleElements.length != 0) {
+            for (var i = 0; i < bgTitleElements.length; i++) {
+                bgTitleElements[i].classList.remove("bgTitleDark");
+            }
         }
 
         darkModeImg.src = "images/moon.svg";
@@ -47,8 +49,10 @@ function toggleDarkMode() {
             }
         }
 
-        if (welcomeTitleElement != null) {
-            welcomeTitleElement.classList.add("bgTitleDark");
+        if (bgTitleElements.length != 0) {
+            for (var i = 0; i < bgTitleElements.length; i++) {
+                bgTitleElements[i].classList.add("bgTitleDark");
+            }
         }
         
         darkModeImg.src = "images/sun.svg";
@@ -62,7 +66,7 @@ function loadDarkMode() {
     var bodyElement = document.body;
     var formControlElements = document.getElementsByClassName("formControl");
     var formBodyElements = document.getElementsByClassName("formBody");
-    var welcomeTitleElement = document.getElementById("welcomeTitle");
+    var bgTitleElements = document.getElementsByClassName("bgTitle");
 
     if (localStorage.getItem("darkMode") == "true") {
         bodyElement.classList.add("darkModeBody");
@@ -74,8 +78,10 @@ function loadDarkMode() {
             }
         }
 
-        if (welcomeTitleElement != null) {
-            welcomeTitleElement.classList.add("bgTitleDark");
+        if (bgTitleElements.length != 0) {
+            for (var i = 0; i < bgTitleElements.length; i++) {
+                bgTitleElements[i].classList.add("bgTitleDark");
+            }
         }
         
         darkModeImg.src = "images/sun.svg";
@@ -90,8 +96,10 @@ function loadDarkMode() {
             }
         }
 
-        if (welcomeTitleElement != null) {
-            welcomeTitleElement.classList.remove("bgTitleDark");
+        if (bgTitleElements.length != 0) {
+            for (var i = 0; i < bgTitleElements.length; i++) {
+                bgTitleElements[i].classList.remove("bgTitleDark");
+            }
         }
         
         darkModeImg.src = "images/moon.svg";
