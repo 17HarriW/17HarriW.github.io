@@ -1,6 +1,6 @@
-﻿function ALevelsCollapse() {
-    var collapsibleImg = document.getElementById("ALevelCollapsibleImg");
-    var content = document.getElementById("ALevelContent");
+﻿function ContactCollapse() {
+    var collapsibleImg = document.getElementById("contactCollapsibleImg");
+    var content = document.getElementById("contactContent");
     content.classList.toggle("collapsed");
 
     if (collapsibleImg.getAttribute("src") == "images/collapse.svg") {

@@ -92,8 +92,8 @@ body {
 }
 
 .collapsibleImg {
-    width: 3em;
-    height: 3em;
+    width: 4em;
+    height: 4em;
     cursor: pointer;
 }
 
@@ -101,6 +101,7 @@ body {
     color: var(--accent-2-color);
     float: left;
     padding-left: 1em;
+    font-size: 2em;
 }
 
 .collapsibleContainer {
@@ -113,6 +114,13 @@ body {
 
 .collapsed {
     display: block;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: inherit;
+    font-family: var(--alt-font-family);
+    padding: 0.375rem 0.75rem;
+    padding-left: 3em;
 }
 
 #form {
@@ -135,8 +143,8 @@ body {
 }
 
 .formHeading {
-    font-family: var(--title-font-family);
-    color: var(--accent-2-color);
+    font-family: var(--main-font-family);
+    font-size: 2em;
 }
 
 .formBodyDark {
@@ -265,4 +273,16 @@ label.formLabel {
 
 input[type="submit"].formBtnBlock, input[type="reset"].formBtnBlock, input[type="button"].formBtnBlock {
     width: 80%;
+}
+
+#about {
+    display: block;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: inherit;
+    font-family: var(--alt-font-family);
+    padding: 0.375rem 0.75rem;
+    padding-left: 3em;
+    padding-right: 3em;
 }

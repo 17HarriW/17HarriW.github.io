@@ -30,27 +30,62 @@
         </div>
     </header>
 
-    <div class="collapsibleContainer">
-        <button onclick="ALevelsCollapse()" type="button" class="collapsible">
-            <img src="images/expand.svg" class="collapsibleImg" id="ALevelCollapsibleImg" alt="collapsible" />
-        </button>
-        <h2 id="ALevelsTitle" class="collapsibleTitle">Studies</h2>
-    </div>
-    <div class="content" id="ALevelContent">
-        <p>I am currently studying 4 A-Levels at Fulford School, York</p>
-        <ul id="subjectList" class="list">
-            <li>Computer Science</li>
-            <li>Mathematics</li>
-            <li>Further Mathematics</li>
-            <li>Physics</li>
-        </ul>
-    </div>
-
-
     <h2 id="portfolioTitle" class="title">Portfolio</h2>
 
 
     <h3 id="projectsTitle" class="title">Projects</h3>
+
+    <div class="collapsibleContainer">
+        <button onclick="ContactCollapse()" type="button" class="collapsible">
+            <img src="images/expand.svg" class="collapsibleImg" id="contactCollapsibleImg" alt="collapsible" />
+        </button>
+        <h2 id="ContactTitle" class="collapsibleTitle">Contact</h2>
+    </div>
+    <div class="content" id="contactContent">
+        <div class="formBody">
+
+            <div id="form">
+                <h2 class="formHeading">Contact me!</h2>
+
+                <form id="formId" class="formClass" method="POST" action="https://formspree.io/f/moqojvyd">
+
+                    <div class="formGroup">
+                        <label for="Name" class="formLabel">Your name</label>
+                        <div class="formInputGroup">
+                            <input type="text" id="name" name="name" class="formControl" required>
+                        </div>
+                    </div>
+
+                    <div class="formGroup">
+                        <label for="Email" class="formLabel">Your email address</label>
+                        <div class="formInputGroup">
+                            <input type="email" id="email" name="email" class="formControl" required>
+                        </div>
+                    </div>
+
+                    <div class="formGroup">
+                        <label for="Subject" class="formLabel">Message subject</label>
+                        <div class="formInputGroup">
+                            <input type="text" id="subject" name="subject" class="formControl" required>
+                        </div>
+                    </div>
+
+                    <div class="formGroup">
+                        <label for="Message" class="formLabel">Your message</label>
+                        <div class="formInputGroup">
+                            <textarea id="message" name="message" class="formControl" rows="6" maxlength="3000" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="formGroup">
+                        <button type="submit" id="formBtn" class="formBtn formBtnPrimary formBtnLg formBtnBlock">Send Message</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
 
     <script src="scripts.js"></script>
 </body>

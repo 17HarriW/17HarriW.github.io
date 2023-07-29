@@ -30,6 +30,112 @@
         </div>
     </header>
 
+    <div id="about" class="container">
+        <h2 id="aboutTitle" class="title">Hi, I'm William Harris</h2>
+        <p>
+            I am a dedicated Year 13 student pursuing a passion for Computer Science, Mathematics, Further Mathematics,
+            and Physics. Throughout my academic journey, I have developed a strong affinity for software architecture and
+            systems design. With a logical and critical approach at the core of my problem-solving process, I find joy in
+            tackling complex challenges and creating innovative solutions.
+        </p>
+        <h4>My life, so far:</h4>
+        <p>
+            My fascination with the world of design and coding began at a tender age of 7 when I joined a coding club.
+            It was here that I experienced an immediate connection with the computational approach to problem-solving,
+            which seamlessly blended with the logical workings of my mind. I transitioned from creating fun and interactive
+            Scratch games to venturing into the world of web development using HTML and CSS, all before completing primary
+            school. The ability to craft websites, visually appealing and functional, opened up new possibilities in my
+            creative journey.
+            <br />
+            As I entered secondary school, my thirst for knowledge led me to Python, which fueled my passion for computer
+            design even further. I found joy in constructing intricate programs and exploring the depths of software architecture.
+            The culmination of my efforts came to fruition when I achieved outstanding results in my GCSEs. With flying
+            colors, I secured an array of 9s (equivalent to A**) including Computer Science, Mathematics, and English Language.
+            These accomplishments reinforced my belief in the path I had chosen and served as a testament to my dedication to the
+            subjects I am truly passionate about.
+            <br />
+            Presently, during my A levels, my passion for computer science burns brighter than ever. I have expanded my
+            repertoire to encompass a wide breadth of programming languages, including C#, JavaScript, Python, and SQL.
+            Armed with this knowledge, I am now adept at creating software of remarkable quality, with the potential to be
+            offered as marketable products.
+        </p>
+        <h4>Prgramming and Designing Software:</h4>
+        <p>
+            Programming is more than just a skill to me; it is a form of artistry. My ability to code allows me to breathe
+            life into abstract ideas, transforming them into functional and elegant software applications. I revel in the
+            process of architecting efficient and scalable systems, meticulously crafting code that not only works flawlessly
+            but is also a joy to behold. I firmly believe that well-designed software is a testament to the intersection of
+            creativity and engineering precision.
+        </p>
+        <h4>Personal Pursuits:</h4>
+        <p>
+            Beyond the world of programming and software design, I have a strong penchant for climbing. Scaling the heights
+            of challenging routes teaches me valuable lessons in perseverance, problem-solving, and conquering fears. This
+            spirit also extends to my personal life, where I find solace in spending quality time with friends, engaging in
+            meaningful conversations, and creating lasting memories.
+        </p>
+        <h4>Thank you!</h4>
+        <p>
+            Thank you for taking the time to visit my website. It serves as a testament to my dedication, enthusiasm, and
+            talent in the field of computer science and software design. As you explore this site, I hope you gain insights
+            into my skills, experiences, and the creative mindset that drives me to excel in everything I do. Whether you are
+            an employer or an academic institution, I am eager to discuss potential opportunities and collaborations that align
+            with my passion for software architecture and design.
+        </p>
+    </div>
+
+    <div class="collapsibleContainer">
+        <button onclick="ContactCollapse()" type="button" class="collapsible">
+            <img src="images/expand.svg" class="collapsibleImg" id="contactCollapsibleImg" alt="collapsible" />
+        </button>
+        <h2 id="ContactTitle" class="collapsibleTitle">Contact</h2>
+    </div>
+    <div class="content" id="contactContent">
+        <div class="formBody">
+
+            <div id="form">
+                <h2 class="formHeading">Contact me!</h2>
+
+                <form id="formId" class="formClass" method="POST" action="https://formspree.io/f/moqojvyd">
+
+                    <div class="formGroup">
+                        <label for="Name" class="formLabel">Your name</label>
+                        <div class="formInputGroup">
+                            <input type="text" id="name" name="name" class="formControl" required>
+                        </div>
+                    </div>
+
+                    <div class="formGroup">
+                        <label for="Email" class="formLabel">Your email address</label>
+                        <div class="formInputGroup">
+                            <input type="email" id="email" name="email" class="formControl" required>
+                        </div>
+                    </div>
+
+                    <div class="formGroup">
+                        <label for="Subject" class="formLabel">Message subject</label>
+                        <div class="formInputGroup">
+                            <input type="text" id="subject" name="subject" class="formControl" required>
+                        </div>
+                    </div>
+
+                    <div class="formGroup">
+                        <label for="Message" class="formLabel">Your message</label>
+                        <div class="formInputGroup">
+                            <textarea id="message" name="message" class="formControl" rows="6" maxlength="3000" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="formGroup">
+                        <button type="submit" id="formBtn" class="formBtn formBtnPrimary formBtnLg formBtnBlock">Send Message</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
     <script src="scripts.js"></script>
 </body>
 </html>
