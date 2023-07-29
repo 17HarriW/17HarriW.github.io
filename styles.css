@@ -27,6 +27,9 @@ body {
 
 #header {
     display: flex;
+    position: sticky;
+    top: 0;
+    background-color: inherit;
 }
 
 .navigation {
@@ -285,4 +288,20 @@ input[type="submit"].formBtnBlock, input[type="reset"].formBtnBlock, input[type=
     padding: 0.375rem 0.75rem;
     padding-left: 3em;
     padding-right: 3em;
+}
+
+#welcomeTitle {
+    font-size: 7vw;
+    line-height: 1.5;
+    font-family: var(--alt-font-family);
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+}
+
+.bgTitle {
+    color: var(--light-bg-color);
+}
+
+.bgTitleDark {
+    color: var(--alt-bg-color);
 }

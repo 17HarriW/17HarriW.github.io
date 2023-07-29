@@ -16,6 +16,9 @@ function toggleDarkMode() {
     var bodyElement = document.body;
     var formControlElements = document.getElementsByClassName("formControl");
     var formBodyElements = document.getElementsByClassName("formBody");
+    var welcomeTitleElement = document.getElementById("welcomeTitle");
+
+    
 
     if (localStorage.getItem("darkMode") == "true") {
         bodyElement.classList.remove("darkModeBody");
@@ -25,6 +28,10 @@ function toggleDarkMode() {
             for (var i = 0; i < formControlElements.length; i++) {
                 formControlElements[i].classList.remove("formControlDark");
             }
+        }
+
+        if (welcomeTitleElement != null) {
+            welcomeTitleElement.classList.remove("bgTitleDark");
         }
 
         darkModeImg.src = "images/moon.svg";
@@ -39,10 +46,15 @@ function toggleDarkMode() {
                 formControlElements[i].classList.add("formControlDark");
             }
         }
+
+        if (welcomeTitleElement != null) {
+            welcomeTitleElement.classList.add("bgTitleDark");
+        }
         
         darkModeImg.src = "images/sun.svg";
         localStorage.setItem("darkMode", "true");
     }
+
 }
 
 function loadDarkMode() {
@@ -50,6 +62,7 @@ function loadDarkMode() {
     var bodyElement = document.body;
     var formControlElements = document.getElementsByClassName("formControl");
     var formBodyElements = document.getElementsByClassName("formBody");
+    var welcomeTitleElement = document.getElementById("welcomeTitle");
 
     if (localStorage.getItem("darkMode") == "true") {
         bodyElement.classList.add("darkModeBody");
@@ -59,6 +72,10 @@ function loadDarkMode() {
             for (var i = 0; i < formControlElements.length; i++) {
                 formControlElements[i].classList.add("formControlDark");
             }
+        }
+
+        if (welcomeTitleElement != null) {
+            welcomeTitleElement.classList.add("bgTitleDark");
         }
         
         darkModeImg.src = "images/sun.svg";
@@ -71,6 +88,10 @@ function loadDarkMode() {
             for (var i = 0; i < formControlElements.length; i++) {
                 formControlElements[i].classList.remove("formControlDark");
             }
+        }
+
+        if (welcomeTitleElement != null) {
+            welcomeTitleElement.classList.remove("bgTitleDark");
         }
         
         darkModeImg.src = "images/moon.svg";
