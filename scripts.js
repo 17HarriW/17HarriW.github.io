@@ -19,19 +19,27 @@ function toggleDarkMode() {
 
     if (localStorage.getItem("darkMode") == "true") {
         bodyElement.classList.remove("darkModeBody");
-        formBodyElements[0].classList.remove("formBodyDark");
-        for (var i = 0; i < formControlElements.length; i++) {
-            formControlElements[i].classList.remove("formControlDark");
+
+        if (formBodyElements.length != 0) {
+            formBodyElements[0].classList.remove("formBodyDark");
+            for (var i = 0; i < formControlElements.length; i++) {
+                formControlElements[i].classList.remove("formControlDark");
+            }
         }
+
         darkModeImg.src = "images/moon.svg";
         localStorage.setItem("darkMode", "false");
     }
     else {
         bodyElement.classList.add("darkModeBody");
-        formBodyElements[0].classList.add("formBodyDark");
-        for (var i = 0; i < formControlElements.length; i++) {
-            formControlElements[i].classList.add("formControlDark");
+
+        if (formBodyElements.length != 0) {
+            formBodyElements[0].classList.add("formBodyDark");
+            for (var i = 0; i < formControlElements.length; i++) {
+                formControlElements[i].classList.add("formControlDark");
+            }
         }
+        
         darkModeImg.src = "images/sun.svg";
         localStorage.setItem("darkMode", "true");
     }
@@ -45,18 +53,26 @@ function loadDarkMode() {
 
     if (localStorage.getItem("darkMode") == "true") {
         bodyElement.classList.add("darkModeBody");
-        formBodyElements[0].classList.add("formBodyDark");
-        for (var i = 0; i < formControlElements.length; i++) {
-            formControlElements[i].classList.add("formControlDark");
+
+        if (formBodyElements.length != 0) {
+            formBodyElements[0].classList.add("formBodyDark");
+            for (var i = 0; i < formControlElements.length; i++) {
+                formControlElements[i].classList.add("formControlDark");
+            }
         }
+        
         darkModeImg.src = "images/sun.svg";
     }
     else {
         bodyElement.classList.remove("darkModeBody");
-        formBodyElements[0].classList.remove("formBodyDark");
-        for (var i = 0; i < formControlElements.length; i++) {
-            formControlElements[i].classList.remove("formControlDark");
+
+        if (formBodyElements.length != 0) {
+            formBodyElements[0].classList.remove("formBodyDark");
+            for (var i = 0; i < formControlElements.length; i++) {
+                formControlElements[i].classList.remove("formControlDark");
+            }
         }
+        
         darkModeImg.src = "images/moon.svg";
     }
 }
