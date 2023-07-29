@@ -30,7 +30,49 @@
         </div>
     </header>
 
-    
+    <div class="formBody">
+
+        <div id="form">
+            <h2 class="formHeading">Contact me!</h2>
+
+            <form id="formId" class="formClass" method="POST" action="https://formspree.io/f/moqojvyd">
+
+                <div class="formGroup">
+                    <label for="Name" class="formLabel">Your name</label>
+                    <div class="formInputGroup">
+                        <input type="text" id="name" name="name" class="formControl" required>
+                    </div>
+                </div>
+
+                <div class="formGroup">
+                    <label for="Email" class="formLabel">Your email address</label>
+                    <div class="formInputGroup">
+                        <input type="email" id="email" name="email" class="formControl" required>
+                    </div>
+                </div>
+
+                <div class="formGroup">
+                    <label for="Subject" class="formLabel">Message subject</label>
+                    <div class="formInputGroup">
+                        <input type="text" id="subject" name="subject" class="formControl" required>
+                    </div>
+                </div>
+
+                <div class="formGroup">
+                    <label for="Message" class="formLabel">Your message</label>
+                    <div class="formInputGroup">
+                        <textarea id="message" name="message" class="formControl" rows="6" maxlength="3000" required></textarea>
+                    </div>
+                </div>
+
+                <div class="formGroup">
+                    <button type="submit" id="formBtn" class="formBtn formBtnPrimary formBtnLg formBtnBlock">Send Message</button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
 
     <script src="scripts.js"></script>
 </body>
