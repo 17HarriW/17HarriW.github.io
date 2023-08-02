@@ -43,7 +43,6 @@ body {
 
 .navigationItem {
     border-style: none;
-    font-size: large;
     margin: 0.2em;
     margin-left: 1em;
     margin-right: 1em;
@@ -51,6 +50,45 @@ body {
     text-decoration: none;
     line-height: 3em;
     color: var(--accent-4-color);
+}
+
+@media only screen and (min-width: 720px) and (orientation: landscape){
+    .navigationItem {
+        font-size: 2vw;
+    }
+
+    #nameTitle {
+        font-size: 2.5vw;
+    }
+}
+
+@media only screen and (min-width: 720px){
+    #darkModeBtn {
+        height: 2vw;
+        width: 2vw;
+    }
+
+    #darkModeImg {
+        height: 2vw;
+        width: 2vw;
+    }
+}
+
+@media only screen and (max-width: 719px) {
+    .navigationItem {
+        font-size: large;
+    }
+    #nameTitle {
+        font-size: x-large;
+    }
+    #darkModeBtn {
+        height: 2rem;
+        width: 2rem;
+    }
+    #darkModeImg {
+        height: 2rem;
+        width: 2rem;
+    }
 }
 
 .navigationItem:hover {
@@ -63,8 +101,6 @@ body {
 }
 
 #darkModeBtn {
-    height: 3em;
-    width: 3em;
     background-color: transparent;
     border: none;
     margin: 0.2em;
@@ -72,9 +108,7 @@ body {
 }
 
 #darkModeImg {
-    height: 2em;
     cursor: pointer;
-    width: 2em;
     filter: invert(57%) sepia(50%) saturate(525%) hue-rotate(118deg) brightness(86%) contrast(93%);
 }
 
