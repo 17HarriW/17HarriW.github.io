@@ -409,6 +409,7 @@ input[type="submit"].formBtnBlock, input[type="reset"].formBtnBlock, input[type=
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+    aspect-ratio: 2 / 1;
 }
 .gridBtn {
     border: none;
