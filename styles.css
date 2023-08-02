@@ -91,20 +91,23 @@ body {
 }
 
 .collapsible:hover {
-    filter: invert(100%) sepia(26%) saturate(5776%) hue-rotate(210deg) brightness(130%) contrast(106%);
+    filter: invert(100%) sepia(26%) saturate(5776%) hue-rotate(180deg) brightness(100%) contrast(106%);
 }
 
 .collapsibleImg {
-    width: 4em;
-    height: 4em;
+    width: 10vw;
+    height: 10vw;
     cursor: pointer;
 }
 
 .collapsibleTitle {
     color: var(--accent-2-color);
-    float: left;
+    cursor: pointer;
     padding-left: 1em;
-    font-size: 2em;
+    font-size: 7vw;
+    position: relative;
+    bottom: 15vw;
+    left: 2vw;
 }
 
 .collapsibleContainer {
@@ -113,6 +116,8 @@ body {
 
 .content {
     display: none;
+    position: relative;
+    top: 10vw;
 }
 
 .collapsed {
@@ -123,7 +128,6 @@ body {
     color: inherit;
     font-family: var(--alt-font-family);
     padding: 0.375rem 0.75rem;
-    padding-left: 3rem;
 }
 
 #form {
@@ -317,4 +321,12 @@ input[type="submit"].formBtnBlock, input[type="reset"].formBtnBlock, input[type=
     color: var(--accent-4-color);
     font-size: 3em;
     padding-left: 2rem;
+}
+
+#aboutMeTitle {
+    font-size: 7vw;
+}
+
+#aboutMeTitle:hover {
+    color: var(--accent-5-color);
 }
