@@ -28,6 +28,7 @@ body {
 #header {
     display: flex;
     position: sticky;
+    z-index: 10;
     top: 0;
     background-color: inherit;
 }
@@ -315,6 +316,29 @@ input[type="submit"].formBtnBlock, input[type="reset"].formBtnBlock, input[type=
     padding-left: 8vw;
     position: relative;
     bottom: 3em;
+}
+
+#codeLink {
+    font-size: 2vw;
+    font-family: var(--alt-font-family);
+    text-align: left;
+    padding-left: 8vw;
+    position: relative;
+    bottom: 10.5vw;
+    left: 29em;
+    color: var(--accent-4-color);
+}
+
+#codeLink:hover {
+    color: var(--accent-5-color);
+}
+
+.hoverLink {
+    color: var(--accent-4-color);
+}
+
+.hoverLink:hover {
+    color: var(--accent-5-color);
 }
 
 .linkTitle {
