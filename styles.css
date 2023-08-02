@@ -358,8 +358,7 @@ input[type="submit"].formBtnBlock, input[type="reset"].formBtnBlock, input[type=
     text-align: left;
     padding-left: 8vw;
     position: relative;
-    bottom: 10.5vw;
-    left: 29em;
+    right: 6vw;
     color: var(--accent-4-color);
 }
 
