@@ -11,6 +11,36 @@
     }
 }
 
+function one() {
+    var elements = document.getElementsByClassName("column");
+    var btns = document.getElementsByClassName("gridBtn");
+    for (i = 0; i < elements.length; i++) {
+        elements[i].style.flex = "100%";
+    }
+    btns[0].classList.add("isActive");
+    btns[1].classList.remove("isActive");
+    btns[2].classList.remove("isActive");
+}
+function two() {
+    var elements = document.getElementsByClassName("column");
+    var btns = document.getElementsByClassName("gridBtn");
+    for (i = 0; i < elements.length; i++) {
+        elements[i].style.flex = "40%";
+    }
+    btns[0].classList.remove("isActive");
+    btns[1].classList.add("isActive");
+    btns[2].classList.remove("isActive");
+}
+function four() {
+    var elements = document.getElementsByClassName("column");
+    var btns = document.getElementsByClassName("gridBtn");
+    for (i = 0; i < elements.length; i++) {
+        elements[i].style.flex = "20%";
+    }
+    btns[0].classList.remove("isActive");
+    btns[1].classList.remove("isActive");
+    btns[2].classList.add("isActive");
+}
 function toggleDarkMode() {
     var darkModeImg = document.getElementById("darkModeImg");
     var bodyElement = document.body;

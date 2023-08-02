@@ -387,3 +387,54 @@ input[type="submit"].formBtnBlock, input[type="reset"].formBtnBlock, input[type=
 #aboutMeTitle:hover {
     color: var(--accent-5-color);
 }
+
+#projectsTitle {
+    font-size: 5vw;
+    font-family: var(--alt-font-family);
+    padding-left: 2rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 48%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+.gridBtn {
+    border: none;
+    outline: none;
+    padding: 1vw 2.3vw;
+    background-color: var(--accent-4-color);
+    cursor: pointer;
+    font-size: 4vw;
+    margin: 1vw;
+    color: var(--main-text-color);
+}
+
+.gridBtn:hover {
+    background-color: var(--accent-5-color);
+}
+
+.isActive {
+    background-color: var(--accent-5-color);
+}
+
+#gridBtns {
+    text-align: center;
+}
+
+#perRowTitle{
+    text-align: center;
+    font-family: var(--alt-font-family);
+    font-size: 3vw;
+}
